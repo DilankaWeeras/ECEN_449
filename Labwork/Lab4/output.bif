@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/project_1/project_1.sdk/FSBL/Debug/FSBL.elf
+	/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+	/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/u-boot/u-boot.elf
+}

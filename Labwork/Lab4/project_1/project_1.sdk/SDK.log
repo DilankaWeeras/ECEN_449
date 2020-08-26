@@ -1,0 +1,10 @@
+13:08:27 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/project_1/project_1.sdk/design_1_wrapper.hdf.
+13:08:28 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:08:30 INFO  : XSDB server has started successfully.
+13:13:58 INFO  : Invoking Bootgen: bootgen -image output.bif -o /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/BOOT.bin
+13:13:58 INFO  : Creating new bif file /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/output.bif
+13:13:59 INFO  : Bootgen command execution is done.
+08:15:24 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+08:15:25 INFO  : XSDB server has started successfully.
+08:15:35 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab4/project_1/project_1.sdk/design_1_wrapper.hdf.
+08:15:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
