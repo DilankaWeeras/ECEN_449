@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jan 29 19:00:35 2020
+# Process ID: 14823
+# Log file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/impl_1/top_level_jackpot.vdi
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_level_jackpot.tcl -notrace

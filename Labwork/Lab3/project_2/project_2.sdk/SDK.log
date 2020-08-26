@@ -1,0 +1,42 @@
+16:33:03 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper.hdf.
+16:33:06 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:33:13 INFO  : XSDB server has started successfully.
+17:06:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77F48A" && level==0} -index 1' command is executed.
+17:06:55 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:07:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:07:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77F48A" && level==0} -index 1' command is executed.
+17:07:39 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:08:17 INFO  : ps7_init is completed.
+17:08:18 INFO  : ps7_post_config is completed.
+17:08:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:12:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77F48A" && level==0} -index 1' command is executed.
+17:12:46 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:12:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77F48A" && level==0} -index 1' command is executed.
+17:15:22 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:15:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77F48A" && level==0} -index 1' command is executed.
+17:15:33 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:15:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:16:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:17:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:18:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:20:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:20:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:21:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:21:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:21:58 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:35:30 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:35:31 INFO  : XSDB server has started successfully.
+10:35:39 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper.hdf.
+10:35:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:38:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A7810FA" && level==0} -index 1' command is executed.
+10:38:49 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab3/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:39:26 INFO  : ps7_init is completed.
+10:39:26 INFO  : ps7_post_config is completed.
+10:39:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:49:12 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

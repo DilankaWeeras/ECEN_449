@@ -1,0 +1,114 @@
+18:25:27 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+18:25:28 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+18:25:30 INFO  : XSDB server has started successfully.
+18:27:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78137A" && level==0} -index 1' command is executed.
+18:27:22 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+18:27:32 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+18:28:09 INFO  : Processor reset is completed for microblaze_0
+18:30:00 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:55:10 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:55:11 INFO  : XSDB server has started successfully.
+10:55:12 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+10:55:13 INFO  : Checking for hwspec changes in the project led_sw_wrapper_hw_platform_0.
+10:55:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:55:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:55:48 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+10:56:00 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+10:56:09 INFO  : Processor reset is completed for microblaze_0
+11:03:39 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:12:58 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:12:59 INFO  : XSDB server has started successfully.
+11:13:01 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+11:13:02 INFO  : Checking for hwspec changes in the project led_sw_wrapper_hw_platform_0.
+11:13:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581009119000,  Project:1580862255000
+11:13:02 INFO  : The hardware specification for project 'led_sw_wrapper_hw_platform_0' is different from /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+11:13:02 INFO  : Copied contents of /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf into /led_sw_wrapper_hw_platform_0/system.hdf.
+11:13:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:13:03 INFO  : 
+11:13:04 INFO  : Updating hardware inferred compiler options for counter_sw.
+11:13:04 INFO  : Clearing existing target manager status.
+11:21:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+11:21:58 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+11:25:07 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+11:25:17 INFO  : Processor reset is completed for microblaze_0
+11:26:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:30:25 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:30:28 INFO  : Processor reset is completed for microblaze_0
+11:31:24 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:31:26 INFO  : Processor reset is completed for microblaze_0
+11:34:07 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:34:10 INFO  : Processor reset is completed for microblaze_0
+11:35:22 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:35:23 INFO  : Processor reset is completed for microblaze_0
+11:35:32 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:35:34 INFO  : Processor reset is completed for microblaze_0
+11:35:49 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:35:51 INFO  : Processor reset is completed for microblaze_0
+11:36:03 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:36:05 INFO  : Processor reset is completed for microblaze_0
+11:36:23 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:36:23 ERROR : Timeout occured while waiting to get reply for command "close_terminal"
+11:36:23 ERROR : Error while closing JTAG UART server: 
+11:36:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+11:36:34 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+11:36:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:36:47 INFO  : Processor reset is completed for microblaze_0
+11:36:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:36:58 INFO  : Processor reset is completed for microblaze_0
+11:37:36 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:38:33 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:38:34 INFO  : XSDB server has started successfully.
+11:38:35 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+11:38:36 INFO  : Checking for hwspec changes in the project led_sw_wrapper_hw_platform_0.
+11:38:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+11:38:56 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+11:39:00 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+11:39:05 INFO  : Processor reset is completed for microblaze_0
+11:40:25 INFO  : Processor reset is completed for microblaze_0
+11:42:09 INFO  : Processor reset is completed for microblaze_0
+11:42:41 INFO  : Processor reset is completed for microblaze_0
+11:45:27 INFO  : Processor reset is completed for microblaze_0
+11:47:24 INFO  : Processor reset is completed for microblaze_0
+11:54:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581011582000,  Project:1581009119000
+11:54:41 INFO  : Project led_sw_wrapper_hw_platform_0's source hardware specification located at /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:55:04 INFO  : Project led_sw_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+11:55:39 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:55:42 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:55:43 INFO  : XSDB server has started successfully.
+11:55:44 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+11:56:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+11:56:05 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+11:56:11 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+11:56:20 INFO  : Processor reset is completed for microblaze_0
+11:57:15 INFO  : Processor reset is completed for microblaze_0
+11:57:56 INFO  : Processor reset is completed for microblaze_0
+12:02:07 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:12:31 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:12:32 INFO  : XSDB server has started successfully.
+12:12:33 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+12:12:34 INFO  : Checking for hwspec changes in the project led_sw_wrapper_hw_platform_1.
+12:12:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581012679000,  Project:1581011582000
+12:12:35 INFO  : The hardware specification for project 'led_sw_wrapper_hw_platform_1' is different from /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf.
+12:12:35 INFO  : Copied contents of /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper.hdf into /led_sw_wrapper_hw_platform_1/system.hdf.
+12:12:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:12:35 INFO  : Clearing existing target manager status.
+12:12:36 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:12:36 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:13:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:13:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+12:13:12 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/led_sw_wrapper_hw_platform_0/download.bit"
+12:13:31 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+12:13:31 INFO  : Processor reset is completed for microblaze_0
+12:14:14 INFO  : Processor reset is completed for microblaze_0
+12:15:42 INFO  : Processor reset is completed for microblaze_0
+12:16:23 INFO  : Processor reset is completed for microblaze_0
+12:17:17 INFO  : Processor reset is completed for microblaze_0
+12:22:18 INFO  : Processor reset is completed for microblaze_0
+12:22:55 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

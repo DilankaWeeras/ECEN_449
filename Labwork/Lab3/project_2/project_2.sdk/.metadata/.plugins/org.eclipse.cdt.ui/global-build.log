@@ -1,0 +1,387 @@
+16:38:45 **** Build of project multiply_test_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/multiply_v1_0/src
+make -C ps7_cortexa9_0/libsrc/multiply_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/multiply_v1_0/src
+make -C ps7_cortexa9_0/libsrc/multiply_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling multiply...
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Finished building libraries
+16:38:53 **** Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+16:59:33 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:5: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+     for(int i = 0; i < 16; i++)
+     ^
+../src/helloworld.c:62:5: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+../src/helloworld.c:64:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i);
+      ^
+make: *** [src/helloworld.o] Error 1
+17:02:26 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60980	   2320	  22636	  85936	  14fb0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:02:50 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60980	   2320	  22636	  85936	  14fb0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:04:49 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:71:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+../src/helloworld.c:72:34: error: 'result' undeclared (first use in this function)
+      printf("Multiplication %d", result);
+                                  ^
+../src/helloworld.c:72:34: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+17:05:20 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:73:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60980	   2320	  22636	  85936	  14fb0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:08:13 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:12:51 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:15:26 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:73:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60980	   2320	  22636	  85936	  14fb0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:15:40 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:16:01 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:17:44 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:18:08 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:73:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60980	   2320	  22636	  85936	  14fb0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:18:48 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60996	   2320	  22636	  85952	  14fc0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:18:54 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:20:16 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60996	   2320	  22636	  85952	  14fc0	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+17:20:22 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:20:54 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:20:59 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+17:21:53 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); //
+      ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61004	   2320	  22636	  85960	  14fc8	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+10:39:22 **** Incremental Build of configuration Debug for project multiply_test ****
+make all 
+make: Nothing to be done for `all'.
+10:43:49 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); // place i in the first slv 0
+      ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8); // simulated hardware automatically places the product in the slv2
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61004	   2320	  22636	  85960	  14fc8	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 
+11:49:11 **** Auto Build of configuration Debug for project multiply_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../multiply_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+      MULTIPLY_mWriteReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 0, i); // place i in the first slv 0
+      ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      mult = MULTIPLY_mReadReg(XPAR_MULTIPLY_0_S00_AXI_BASEADDR, 8); // simulated hardware automatically places the product in the slv2
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: multiply_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../multiply_test_bsp/ps7_cortexa9_0/lib -o "multiply_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: multiply_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size multiply_test.elf  |tee "multiply_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61004	   2320	  22636	  85960	  14fc8	multiply_test.elf
+Finished building: multiply_test.elf.size
+ 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="counter_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="counter_wrapper_hw_platform_2-target"/>
+	<item value="false" key="counter_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Local" key="counter_wrapper_hw_platform_0-target"/>
+	<item value="false" key="counter_wrapper_hw_platform_2-partial_bit"/>
+	<item value="counter_wrapper.mmi" key="counter_wrapper_hw_platform_0-bmmFile"/>
+	<item value="counter_wrapper.bit" key="counter_wrapper_hw_platform_0-bitFile"/>
+	<item value="counter_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="counter_wrapper.mmi" key="counter_wrapper_hw_platform_2-bmmFile"/>
+	<item value="bootloop" key="counter_wrapper_hw_platform_0-counter_i/microblaze_0-initElf"/>
+	<item value="Auto Detect" key="counter_wrapper_hw_platform_2-device"/>
+	<item value="bootloop" key="counter_wrapper_hw_platform_2-counter_i/microblaze_0-initElf"/>
+	<item value="counter_wrapper.bit" key="counter_wrapper_hw_platform_2-bitFile"/>
+</section>

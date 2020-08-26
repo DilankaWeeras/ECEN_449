@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jan 28 20:14:51 2020
+# Process ID: 6622
+# Log file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/impl_1/top_level_jackpot.vdi
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_level_jackpot.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step write_bitstream"
+    (file "top_level_jackpot.tcl" line 48)
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 28 20:14:57 2020...

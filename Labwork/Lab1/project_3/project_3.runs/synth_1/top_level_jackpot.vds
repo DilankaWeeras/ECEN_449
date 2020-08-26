@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jan 29 19:00:12 2020
+# Process ID: 14648
+# Log file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/synth_1/top_level_jackpot.vds
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/project_3/project_3.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_level_jackpot.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/coe/Xilinx/Vivado/2015.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+Command: synth_design -top top_level_jackpot -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -759 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1098.992 ; gain = 171.520 ; free physical = 6392 ; free virtual = 21651
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level_jackpot' [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/top_level_jackpot.v:4]
+INFO: [Synth 8-638] synthesizing module 'jackpot' [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/jackpot.v:3]
+	Parameter first bound to: 4'b0001 
+	Parameter second bound to: 4'b0010 
+	Parameter third bound to: 4'b0100 
+	Parameter fourth bound to: 4'b1000 
+	Parameter win bound to: 4'b1111 
+	Parameter off bound to: 4'b0000 
+WARNING: [Synth 8-567] referenced signal 'trigger' should be on the sensitivity list [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/jackpot.v:31]
+INFO: [Synth 8-256] done synthesizing module 'jackpot' (1#1) [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/jackpot.v:3]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/clock_divider.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (2#1) [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/clock_divider.v:5]
+INFO: [Synth 8-256] done synthesizing module 'top_level_jackpot' (3#1) [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/top_level_jackpot.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.289 ; gain = 207.816 ; free physical = 6354 ; free virtual = 21613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.289 ; gain = 207.816 ; free physical = 6354 ; free virtual = 21613
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/Jackpot.xdc]
+Finished Parsing XDC File [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/Jackpot.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1454.641 ; gain = 0.000 ; free physical = 6178 ; free virtual = 21438
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6177 ; free virtual = 21437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6177 ; free virtual = 21437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6177 ; free virtual = 21437
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "out" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab1/jackpot.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6170 ; free virtual = 21430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jackpot 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6170 ; free virtual = 21430
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "slow/out" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "slow/out" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6170 ; free virtual = 21430
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6170 ; free virtual = 21430
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\slow/count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\slow/count_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\slow/count_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (\slow/count_reg[0] ) is unused and will be removed from module top_level_jackpot.
+WARNING: [Synth 8-3332] Sequential element (\slow/count_reg[1] ) is unused and will be removed from module top_level_jackpot.
+WARNING: [Synth 8-3332] Sequential element (\slow/count_reg[2] ) is unused and will be removed from module top_level_jackpot.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6157 ; free virtual = 21417
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6157 ; free virtual = 21417
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6157 ; free virtual = 21417
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6116 ; free virtual = 21375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6116 ; free virtual = 21375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    25|
+|4     |LUT2   |     4|
+|5     |LUT4   |     6|
+|6     |LUT5   |     1|
+|7     |LUT6   |    10|
+|8     |FDCE   |     3|
+|9     |FDPE   |     1|
+|10    |FDRE   |    26|
+|11    |LD     |     4|
+|12    |IBUF   |     6|
+|13    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |    98|
+|2     |  slow   |clock_divider |    68|
+|3     |  win1   |jackpot       |    19|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6097 ; free virtual = 21357
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.641 ; gain = 86.297 ; free physical = 6096 ; free virtual = 21356
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.641 ; gain = 527.168 ; free physical = 6096 ; free virtual = 21356
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1462.648 ; gain = 421.660 ; free physical = 6096 ; free virtual = 21356
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1494.672 ; gain = 0.000 ; free physical = 6094 ; free virtual = 21354
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 29 19:00:34 2020...

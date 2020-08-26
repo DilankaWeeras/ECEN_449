@@ -1,0 +1,171 @@
+10:01:40 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:01:41 INFO  : XSDB server has started successfully.
+10:01:42 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper.hdf.
+10:09:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:09:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:09:04 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:09:24 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+10:09:42 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:16:43 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:17:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:17:19 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:18:28 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:20:43 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:22:09 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:22:18 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:25:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:25:31 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:25:41 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:29:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:46:19 INFO  : Launching XSDB server: xsdb -n -s /opt/coe/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:46:20 INFO  : XSDB server has started successfully.
+10:46:28 INFO  : Processing command line option -hwspec /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper.hdf.
+10:46:29 INFO  : Checking for hwspec changes in the project counter_wrapper_hw_platform_0.
+10:46:29 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581007538000,  Project:1581004652000
+10:46:29 INFO  : The hardware specification for project 'counter_wrapper_hw_platform_0' is different from /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper.hdf.
+10:46:29 INFO  : Copied contents of /home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper.hdf into /counter_wrapper_hw_platform_0/system.hdf.
+10:46:29 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:46:30 INFO  : 
+10:46:31 INFO  : Updating hardware inferred compiler options for up_down_counter.
+10:46:31 INFO  : Clearing existing target manager status.
+10:46:41 ERROR :  [Hsi 55-1546] Processor Instance ps7_cortexa9_0 doesn't exist in Xml/HwDb
+10:46:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:47:00 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:47:31 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:51:55 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:52:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:52:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B1DA" && level==0} -index 1' command is executed.
+10:52:26 INFO  : FPGA configured successfully with bitstream "/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_2/project_2.sdk/counter_wrapper_hw_platform_0/download.bit"
+10:52:44 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:53:37 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,1155 @@
+18:26:07 **** Build of project counter_sw_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Finished building libraries
+
+**** Build of configuration Debug for project counter_sw ****
+
+Nothing to build for project counter_sw
+18:26:26 **** Auto Build of configuration Debug for project counter_sw ****
+make all 
+Building file: ../src/lab2a.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2a.o" -I../../counter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2a.d" -MT"src/lab2a.d" -o "src/lab2a.o" "../src/lab2a.c"
+../src/lab2a.c:3:2: error: invalid preprocessing directive #inlcude
+ #inlcude <xstatus.h>
+  ^
+../src/lab2a.c:4:24: fatal error: sil_printf.h: No such file or directory
+ #include <sil_printf.h>
+                        ^
+compilation terminated.
+make: *** [src/lab2a.o] Error 1
+18:26:41 **** Auto Build of configuration Debug for project counter_sw ****
+make all 
+Building file: ../src/lab2a.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2a.o" -I../../counter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2a.d" -MT"src/lab2a.d" -o "src/lab2a.o" "../src/lab2a.c"
+Finished building: ../src/lab2a.c
+ 
+Building target: counter_sw.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../counter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "counter_sw.elf"  ./src/lab2a.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: counter_sw.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size counter_sw.elf  |tee "counter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7433	    308	   2107	   9848	   2678	counter_sw.elf
+Finished building: counter_sw.elf.size
+ 
+18:28:07 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+10:56:07 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:13:32 **** Build of project up_down_counter_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Finished building libraries
+
+**** Build of configuration Debug for project up_down_counter ****
+
+Nothing to build for project up_down_counter
+11:14:25 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:23:84: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+  status = XGpio_Initialize(&leds ,XPAR_LED_DEVICE_ID) && XGpio_Initialize(&btn_sw ,XPAR_AXI_GPIO_0_DEVICE_ID);
+                                                                                    ^
+../src/lab2b.c:23:84: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2b.c:35:42: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   if(0x1 & XGpio_DiscreteRead(&btn_sw,1) == 0x1) // if button zero is pressed must have the bitwise and to only check the lowest bit of the case
+                                          ^
+../src/lab2b.c:43:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x2 & XGpio_DiscreteRead(&btn_sw,1) == 0x2) // if button 2 is pressed
+                                               ^
+../src/lab2b.c:51:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x4 & XGpio_DiscreteRead(&btn_sw,1) == 0x8) // if button 4 is pressed
+                                               ^
+make: *** [src/lab2b.o] Error 1
+11:15:26 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:24:84: error: expected expression before ')' token
+  status = XGpio_Initialize(&leds ,XPAR_LED_DEVICE_ID) && XGpio_Initialize(&btn_sw ,);
+                                                                                    ^
+../src/lab2b.c:36:42: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   if(0x1 & XGpio_DiscreteRead(&btn_sw,1) == 0x1) // if button zero is pressed must have the bitwise and to only check the lowest bit of the case
+                                          ^
+../src/lab2b.c:44:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x2 & XGpio_DiscreteRead(&btn_sw,1) == 0x2) // if button 2 is pressed
+                                               ^
+../src/lab2b.c:52:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x4 & XGpio_DiscreteRead(&btn_sw,1) == 0x8) // if button 4 is pressed
+                                               ^
+make: *** [src/lab2b.o] Error 1
+11:15:38 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:7:15: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:7:15: note: each undeclared identifier is reported only once for each function it appears in
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:36:42: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   if(0x1 & XGpio_DiscreteRead(&btn_sw,1) == 0x1) // if button zero is pressed must have the bitwise and to only check the lowest bit of the case
+                                          ^
+../src/lab2b.c:44:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x2 & XGpio_DiscreteRead(&btn_sw,1) == 0x2) // if button 2 is pressed
+                                               ^
+../src/lab2b.c:52:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if(0x4 & XGpio_DiscreteRead(&btn_sw,1) == 0x8) // if button 4 is pressed
+                                               ^
+make: *** [src/lab2b.o] Error 1
+11:15:59 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:7:15: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:7:15: note: each undeclared identifier is reported only once for each function it appears in
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:52:48: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if((0x4 & XGpio_DiscreteRead(&btn_sw,1) == 0x8)) // if button 4 is pressed
+                                                ^
+make: *** [src/lab2b.o] Error 1
+11:16:12 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:7:15: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:7:15: note: each undeclared identifier is reported only once for each function it appears in
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:52:48: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   else if((0x8 & XGpio_DiscreteRead(&btn_sw,1) == 0x8)) // if button 4 is pressed
+                                                ^
+make: *** [src/lab2b.o] Error 1
+11:16:27 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:7:15: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:7:15: note: each undeclared identifier is reported only once for each function it appears in
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:52:56: error: expected statement before ')' token
+   else if((0x8 & XGpio_DiscreteRead(&btn_sw,1)) == 0x8)) // if button 4 is pressed
+                                                        ^
+../src/lab2b.c:64:3: error: 'else' without a previous 'if'
+   else // No buttons are pressed
+   ^
+make: *** [src/lab2b.o] Error 1
+11:16:36 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:7:15: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function)
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+../src/lab2b.c:7:15: note: each undeclared identifier is reported only once for each function it appears in
+ #define btnsw XPAR_AXI_GPIO_0_DEVICE_ID
+               ^
+../src/lab2b.c:24:69: note: in expansion of macro 'btnsw'
+  status = XGpio_Initialize(&leds ,led) && XGpio_Initialize(&btn_sw ,btnsw);
+                                                                     ^
+make: *** [src/lab2b.o] Error 1
+11:17:17 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8025	    324	   2107	  10456	   28d8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:19:28 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:20:6: warning: variable 'led_final' set but not used [-Wunused-but-set-variable]
+  int led_final;
+      ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7985	    324	   2107	  10416	   28b0	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:21:26 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8045	    324	   2100	  10469	   28e5	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:23:22 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:64:44: error: 'dips_masked' undeclared (first use in this function)
+    xil_printf("Value of dips  = 0x%x\n\r", dips_masked);
+                                            ^
+../src/lab2b.c:64:44: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab2b.o] Error 1
+11:23:49 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:64:44: error: 'dips_masked' undeclared (first use in this function)
+    xil_printf("Value of dips  = 0x%x\n\r", dips_masked);
+                                            ^
+../src/lab2b.c:64:44: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab2b.o] Error 1
+11:23:55 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:68:34: error: 'dips_masked' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&leds, 1, dips_masked);
+                                  ^
+../src/lab2b.c:68:34: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab2b.o] Error 1
+11:24:01 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8033	    324	   2107	  10464	   28e0	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:25:15 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:25:15 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:26:13 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:26:13 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:28:57 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:38:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8333	    324	   2100	  10757	   2a05	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:29:05 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:58:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   else if(butt = 3)
+   ^
+../src/lab2b.c:38:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8037	    324	   2100	  10461	   28dd	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:29:12 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:54:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   else if(butt = 3)
+   ^
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+../src/lab2b.c:23:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7985	    324	   2107	  10416	   28b0	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:29:18 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+../src/lab2b.c:23:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8261	    324	   2100	  10685	   29bd	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:29:27 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+../src/lab2b.c:23:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8241	    324	   2107	  10672	   29b0	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:30:07 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8249	    324	   2107	  10680	   29b8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:30:24 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:30:24 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:31:24 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:31:24 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:33:13 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8249	    324	   2107	  10680	   29b8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:33:38 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8249	    324	   2107	  10680	   29b8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:33:56 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8249	    324	   2107	  10680	   29b8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:34:06 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:34:06 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:35:19 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8333	    324	   2100	  10757	   2a05	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:35:22 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:35:22 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:35:32 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:35:32 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:35:47 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8345	    324	   2107	  10776	   2a18	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:35:49 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:35:49 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:36:01 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8249	    324	   2107	  10680	   29b8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:36:03 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:36:03 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:36:45 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:36:46 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:36:56 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:36:56 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:38:36 **** Auto Build of project counter_sw_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/standalone_v5_1/src
+make -C microblaze_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Finished building libraries
+11:38:49 **** Auto Build of configuration Debug for project counter_sw ****
+make all 
+Building file: ../src/lab2a.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2a.o" -I../../counter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2a.d" -MT"src/lab2a.d" -o "src/lab2a.o" "../src/lab2a.c"
+Finished building: ../src/lab2a.c
+ 
+Building target: counter_sw.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../counter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "counter_sw.elf"  ./src/lab2a.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: counter_sw.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size counter_sw.elf  |tee "counter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7433	    308	   2107	   9848	   2678	counter_sw.elf
+Finished building: counter_sw.elf.size
+ 
+11:39:03 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:39:03 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:40:22 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8329	    324	   2107	  10760	   2a08	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:40:24 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:40:24 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:42:06 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8329	    324	   2107	  10760	   2a08	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:42:08 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:42:08 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:42:39 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:34:7: warning: unused variable 'sw' [-Wunused-variable]
+   int sw = read && 0xF0;
+       ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8329	    324	   2107	  10760	   2a08	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:42:40 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:42:40 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:44:49 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8313	    324	   2107	  10744	   29f8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:45:26 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:45:26 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:47:09 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:37:3: warning: implicit declaration of function 'xil_print' [-Wimplicit-function-declaration]
+   xil_print("Value pf button: 0x%x\n\r", butt);
+   ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab2b.o: In function `main':
+/home/ugrads/d/dweerasinghe/ECEN449/Labwork/Lab2/project_1/project_1.sdk/up_down_counter/Debug/../src/lab2b.c:37: undefined reference to `xil_print'
+collect2: error: ld returned 1 exit status
+make: *** [up_down_counter.elf] Error 1
+11:47:17 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8361	    324	   2107	  10792	   2a28	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:47:23 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:47:23 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:51:11 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8361	    324	   2107	  10792	   2a28	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:55:42 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:56:17 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:56:17 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:57:11 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8361	    324	   2107	  10792	   2a28	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:57:14 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:57:14 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+11:57:37 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8361	    324	   2107	  10792	   2a28	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:57:53 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8293	    324	   2100	  10717	   29dd	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+11:57:55 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+11:57:56 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:13:17 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8293	    324	   2100	  10717	   29dd	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:13:30 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:13:30 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:14:09 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8005	    324	   2100	  10429	   28bd	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:14:13 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:14:13 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:14:59 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+../src/lab2b.c: In function 'main':
+../src/lab2b.c:19:6: warning: variable 'led_final' set but not used [-Wunused-but-set-variable]
+  int led_final;
+      ^
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8041	    324	   2107	  10472	   28e8	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:15:35 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8073	    324	   2107	  10504	   2908	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:15:41 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:15:42 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:16:19 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8053	    324	   2100	  10477	   28ed	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:16:22 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:16:23 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:17:14 **** Auto Build of configuration Debug for project up_down_counter ****
+make all 
+Building file: ../src/lab2b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2b.o" -I../../up_down_counter_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/lab2b.d" -MT"src/lab2b.d" -o "src/lab2b.o" "../src/lab2b.c"
+Finished building: ../src/lab2b.c
+ 
+Building target: up_down_counter.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../up_down_counter_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "up_down_counter.elf"  ./src/lab2b.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: up_down_counter.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size up_down_counter.elf  |tee "up_down_counter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7937	    324	   2107	  10368	   2880	up_down_counter.elf
+Finished building: up_down_counter.elf.size
+ 
+12:17:16 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:17:16 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
+12:22:17 **** Incremental Build of configuration Debug for project counter_sw ****
+make all 
+make: Nothing to be done for `all'.
+12:22:17 **** Incremental Build of configuration Debug for project up_down_counter ****
+make all 
+make: Nothing to be done for `all'.
